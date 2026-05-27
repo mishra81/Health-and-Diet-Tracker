@@ -1,0 +1,1 @@
+<x-app-layout><x-slot name="header"><h1 class="text-2xl font-bold text-white">Create diet plan</h1></x-slot><div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8"><form class="fit-card" method="POST" action="{{ route('admin.diet-plans.store') }}">@include('admin.diet-plans._form', ['button' => 'Save plan'])</form></div></x-app-layout>

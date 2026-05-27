@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .fit-card {
+        @apply rounded-lg border border-white/10 bg-white/[0.08] p-5 shadow-xl shadow-slate-950/20 backdrop-blur;
+    }
+
+    .fit-input {
+        @apply w-full rounded-lg border-white/10 bg-slate-950/60 text-slate-100 placeholder:text-slate-500 focus:border-emerald-300 focus:ring-emerald-300;
+    }
+
+    .fit-label {
+        @apply text-sm font-medium text-slate-200;
+    }
+
+    .fit-button {
+        @apply inline-flex items-center justify-center rounded-lg bg-emerald-400 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-200 focus:ring-offset-2 focus:ring-offset-slate-950;
+    }
+
+    .fit-button-secondary {
+        @apply inline-flex items-center justify-center rounded-lg border border-white/10 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/15;
+    }
+
+    .fit-table {
+        @apply min-w-full divide-y divide-white/10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.06] text-sm text-slate-200;
+    }
+}
